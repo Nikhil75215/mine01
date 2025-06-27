@@ -1,0 +1,119 @@
+  img, video {
+  max-width: 100%;
+  height: auto;
+}
+
+    body {
+      background-color: #fff0f5;
+      font-family: 'Quicksand', sans-serif;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      color: #444;
+      overflow-x: hidden;
+    }
+
+    h1 { 
+      font-family: 'Pacifico', cursive;
+      font-size: 3rem;
+      margin-top: 30px;
+      color: #e75480;
+    }
+
+    img.profile {
+      width: 220px;
+      border-radius: 50%;
+      margin-top: 10px;
+      border: 4px solid #fff;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+
+    .memories, .message-box {
+      max-width: 850px;
+      margin: 40px auto;
+      background: #fff;
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+
+    .memories h2, .message-box h2 {
+      font-family: 'Pacifico', cursive;
+      font-size: 2.5rem;
+      color: #ff69b4;
+      margin-bottom: 20px;
+    }
+
+    .photo-gallery img {
+      width: 200px;
+      height: 140px;
+      margin: 10px;
+      border-radius: 12px;
+      object-fit: cover;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+    }
+
+    video {
+      width: 300px;
+      margin: 10px;
+      border-radius: 12px;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+    }
+
+    footer {
+      margin-top: 40px;
+      font-size: 0.9rem;
+      color: #888;
+      padding-bottom: 20px;
+    }
+
+    /* Popup style */
+    .popup {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background-color: rgba(0,0,0,0.7);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 999;
+    }
+
+    .popup-content {
+      background: #fff;
+      padding: 30px;
+      border-radius: 15px;
+      text-align: center;
+      max-width: 400px;
+      font-size: 1.2rem;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+    }
+
+    .popup button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      background: #e75480;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    /* Confetti */
+    .confetti {
+      position: fixed;
+      width: 10px;
+      height: 10px;
+      background-color: #ff69b4;
+      animation: fall 4s linear infinite;
+      border-radius: 50%;
+    }
+
+    @keyframes fall {
+      0% {
+        transform: translateY(0) rotate(0deg);
+      }
+      100% {
+        transform: translateY(100vh) rotate(360deg);
+      }
+    }
