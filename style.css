@@ -99,16 +99,7 @@
       cursor: pointer;
     }
 
-    /* Confetti */
-    .confetti {
-      position: fixed;
-      width: 10px;
-      height: 10px;
-      background-color: #ff69b4;
-      animation: fall 4s linear infinite;
-      border-radius: 50%;
-    }
-
+  
     @keyframes fall {
       0% {
         transform: translateY(0) rotate(0deg);
